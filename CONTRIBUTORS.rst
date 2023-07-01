@@ -1,7 +1,13 @@
 Contributors
 ============
 
-This is a list of everyone who has made contributions to Snips NLU, in alphabetical order. Thanks a lot for the great work!
+
+This is the list of everyone who made contributions to the NLU SDK AGL library.
+
+* `Malik Talha <https://github.com/malik727>`
+
+
+This is the list of everyone who has made contributions to the original Snips NLU which is used by NLU Inference AGL as a foundation.
 
 * `Alice Coucke <https://github.com/choufractal>`_
 * `cclauss <https://github.com/cclauss>`_

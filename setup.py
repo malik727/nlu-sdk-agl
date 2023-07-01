@@ -31,8 +31,8 @@ required = [
     "scikit-learn>=0.20,<0.21; python_version<'3.6'",
     "scikit-learn==0.22.2.post1; python_version>='3.6'",
     "sklearn-crfsuite>=0.3.6,<0.4",
-    # "snips-nlu-parsers>=0.3.1,<0.5",
-    # "snips-nlu-utils>=0.9,<0.10",
+    "snips-nlu-parsers>=0.4.3,<0.4.4",
+    "snips-nlu-utils>=0.9.1,<0.9.2",
 ]
 
 extras_require = {
@@ -87,7 +87,7 @@ setup(name=about["__title__"],
       include_package_data=True,
       entry_points={
           "console_scripts": [
-              "snips-nlu=snips_nlu.cli:main"
+              "nlu-sdk-agl=snips_nlu.cli:main"
           ]
       },
       zip_safe=False)
