@@ -8,12 +8,12 @@ packages = [p for p in find_packages()
 
 root = os.path.abspath(os.path.dirname(__file__))
 
-with io.open(os.path.join(root, "snips_nlu", "__about__.py"),
+with io.open(os.path.join(root, "nlu_sdk_agl", "__about__.py"),
              encoding="utf8") as f:
     about = dict()
     exec(f.read(), about)
 
-with io.open(os.path.join(root, "README.rst"), encoding="utf8") as f:
+with io.open(os.path.join(root, "README.md"), encoding="utf8") as f:
     readme = f.read()
 
 required = [
@@ -87,7 +87,7 @@ setup(name=about["__title__"],
       include_package_data=True,
       entry_points={
           "console_scripts": [
-              "nlu-sdk-agl=snips_nlu.cli:main"
+              "nlu-sdk-agl=nlu_sdk_agl.cli:main"
           ]
       },
       zip_safe=False)
