@@ -43,7 +43,7 @@ def load_resources(name, required_resources=None):
     else:
         raise MissingResource("Language resource '{r}' not found. This may be "
                               "solved by running "
-                              "'python -m snips_nlu download {r}'"
+                              "'python -m nlu_sdk_agl download {r}'"
                               .format(r=name))
 
 
