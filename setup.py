@@ -8,7 +8,7 @@ packages = [p for p in find_packages()
 
 root = os.path.abspath(os.path.dirname(__file__))
 
-with io.open(os.path.join(root, "nlu_sdk_agl", "__about__.py"),
+with io.open(os.path.join(root, "snips_sdk_agl", "__about__.py"),
              encoding="utf8") as f:
     about = dict()
     exec(f.read(), about)
@@ -29,7 +29,7 @@ required = [
     "scipy>=1.0,<2.0",
     "threadpoolctl>=2.0.0; python_version>='3.6'",
     "scikit-learn>=0.20,<0.21; python_version<'3.6'",
-    "scikit-learn==0.22.2.post1; python_version>='3.6'",
+    "scikit-learn==0.24.2; python_version>='3.6'",
     "sklearn-crfsuite>=0.3.6,<0.4",
     "snips-nlu-parsers>=0.4.3,<0.4.4",
     "snips-nlu-utils>=0.9.1,<0.9.2",
@@ -87,7 +87,7 @@ setup(name=about["__title__"],
       include_package_data=True,
       entry_points={
           "console_scripts": [
-              "nlu-sdk-agl=nlu_sdk_agl.cli:main"
+              "snips-sdk=snips_sdk_agl.cli:main"
           ]
       },
       zip_safe=False)

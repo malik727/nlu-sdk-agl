@@ -1,1 +1,1 @@
-recursive-include nlu_sdk_agl/data *
+recursive-include snips_sdk_agl/data *
